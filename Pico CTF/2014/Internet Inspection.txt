@@ -1,0 +1,9 @@
+Internet Inspection - 30
+
+On his computer, your father left open a browser with the Thyrin Lab Website[https://picoctf.com/api/autogen/serve/index.html?static=false&pid=28baa70afa1967ff63b201f687b7533e]. Can you find the hidden access code?
+
+
+answer: flag_db9511bff4d7b8b36ed7638bae85fd857d2899af
+
+found by pressing f12 and just looking for the flag
+could also delete a few elements to make it visible on webpage

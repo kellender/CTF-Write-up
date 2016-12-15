@@ -1,0 +1,33 @@
+Transfer 100 points
+I was sniffing some web traffic for a while, I think i finally got something interesting. Help me find flag through all these packets.
+
+given file: net_756d631588cb0a400cc16d1848a5f0fb.pcap
+
+
+The given file is a pcap file, or a network packet captuer file, and can be seen in applications like wireshark. 
+Once opened look through the packets with the protocol marked TCP for valuable information is usually passed between TCP streams.
+Then in the filter apply: tcp contains flag
+Follow any TCP stream
+Within the TCP stream there is python code and an encoded flag
+![](./Screenshot.png)
+ 
+Copy the python code and run it to get an understanding of what’s going on
+
+The code is running 3 different encryption algorithms and encoding a variable called flag, which is an example of a flag, not the actual flag!!!
+
+
+The code also gives an array with the different cipher suits and within is the respective function name
+In order to decode the flag given by the pcap file, write decoding algorithms for all the cipher suits, which pretty simple
+
+leave rot13 as is as doing another rotation of 13 charecters will revert to origional charecter 
+For b64d return the b64decode(s)
+For caesard change the shift to -3
+
+What the encode function does is it picks a random cipher suit, encodes the string and takes the index, increments it by 1 and adds it to the beginning of the string, for a number of times
+
+Writing a decoder is as simple as doing the opposite of it, so the decode must pop the first number in the front of the string, decrement it, and use the index to find the cipher suit to decode the encoded string.
+
+FLAG:flag{li0ns_and_tig3rs_4nd_b34rs_0h_mi}
+
+python code:
+	Look in dechiper.py

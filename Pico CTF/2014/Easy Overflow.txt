@@ -1,0 +1,25 @@
+Easy Overflow - 40
+
+Is the sum of two positive integers always positive?
+nc vuln2014.picoctf.com 50000
+'nc' is the Linux netcat command. Try running it in the shell.
+
+hint: Java's integer is defined as being 4 bytes long.
+
+
+
+answer: That_was_easssy!
+
+
+Found by doing math:
+	4 bytes is 2147483648
+	2147483648 - 8667266 + 1 = 2138816382 
+
+Shell excript:
+
+	pico94791@shell:~$ nc vuln2014.picoctf.com 50000                                                          
+	Your number is 8667266. Can you make it negative by adding a positive integer?                            
+	2138816382                                                                                                
+	Congratulations! The sum is -2147483648. Here is the flag: That_was_easssy!                               
+	                                                                                                          
+	Thanks for playing.

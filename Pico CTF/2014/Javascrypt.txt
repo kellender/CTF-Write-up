@@ -1,0 +1,21 @@
+Javascrypt - 40
+
+Tyrin Robotics Lab uses a special web site[https://picoctf.com/api/autogen/serve/index.html?static=false&pid=b1d725db54a1fb027ea6bbd78f9a7d0b#] to encode their secret messages. Can you determine the value of the secret key?
+
+answer: flag_4497
+
+found by pressing f12 and running console.log(key) in console
+
+
+and running java scrip code 		Note: Newer web browser wont run unsafe java script
+	function generateKey() {
+	    var i = 1;
+	    var x = 118;
+	    var n = 5493;
+	    while (i <= 25) {
+	        x = (x * i) % n;
+	        i++;
+	    }
+	    key = "flag_" + Math.abs(x);
+	}
+

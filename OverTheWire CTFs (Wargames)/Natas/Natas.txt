@@ -1,0 +1,15 @@
+natas 0
+default password is natas0
+
+
+natas0 -> natas1
+password: gtVrDuiDfck831PqWsLEZy5gyDz1clto		[found by viewing page sorce]
+
+natas1 -> natas2
+password: ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi		[found by viewing page sorce by pressing F12]
+
+natas2 -> natas3
+password: sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+
+
+http://natas2.natas.labs.overthewire.org/

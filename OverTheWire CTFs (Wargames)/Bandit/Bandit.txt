@@ -1,0 +1,81 @@
+
+Bandit 0
+answer: 
+	ssh bandit0@bandit.labs.overthewire.org
+
+	username: bandit0 [in the command above]
+	password: bandit0
+
+
+Bandit 0 -> Bandit 1
+	answer: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+	found by using the command in home directory of bandit0: cat readme
+
+
+Bandit 1 -> Bandit 2
+	ssh bandit1@bandit.labs.overthewire.org
+	password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+	answer: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+	found by cat ./- 		[- is not recognised as a special filename]
+
+
+Bandit 2 -> Bandit 3
+	ssh bandit2@bandit.labs.overthewire.org
+	password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+	answer: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+	found by cat spaces\ in\ this\ filename 
+
+
+
+Bandit 3 -> Bandit 4
+	ssh bandit3@bandit.labs.overthewire.org
+	password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+	answer: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+	found by:
+		cd inhere
+		ls -al 			[lists hidden files]
+		cat ./.hidden
+
+
+
+Bandit 4 -> Bandit 5
+	ssh bandit4@bandit.labs.overthewire.org
+	password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+	answer: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+	found by looking for the file with human readable charecters
+		cat ./.file07
+
+
+Bandit 5  -> Bandit 6
+	ssh bandit5@bandit.labs.overthewire.org
+	password: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+	answer: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+	found by 
+		find . -type f -size 1033c
+		cat ./maybehere07/.file2 
+
+
+
+template
+Bandit6  -> Bandit 7
+	ssh bandit6@bandit.labs.overthewire.org
+	password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+	answer: 
+	found by 
+
+
+
+
+template
+Bandit  -> Bandit 
+	ssh bandit@bandit.labs.overthewire.org
+	password: 
+
+	answer: 
+	found by 

@@ -1,0 +1,16 @@
+leviathan 0
+	ssh leviathan0@leviathan.labs.overthewire.org
+	password: 
+
+	answer: 
+	found by
+
+
+
+template
+leviathan  -> leviathan 
+	ssh leviathan@leviathan.labs.overthewire.org
+	password: 
+
+	answer: 
+	found by 

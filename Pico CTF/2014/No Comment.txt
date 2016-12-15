@@ -1,0 +1,10 @@
+No Comment - 20
+
+The CD you find has a copy of your father's website: homepage.html. Maybe something is hidden in the site...
+
+https://picoctf.com/api/autogen/serve/homepage.html?static=false&pid=3099c443d360a2514f17f155fb65d5d2
+
+
+answer: flag_d3effbb8d7f27692dd69d84d7ea1ac8f117eaf87
+
+found by pressing f12

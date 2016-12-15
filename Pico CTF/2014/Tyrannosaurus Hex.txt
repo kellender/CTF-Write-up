@@ -1,0 +1,7 @@
+Tyrannosaurus Hex - 10
+
+The contents of the flash drive appear to be password protected. On the back of the flash drive, you see the hexadecimal number 0xf946baac scribbled in ink. The password prompt, however, only accepts decimal numbers. What number should you enter? (Press the Hint button for advice on solving the challenge)
+
+answer: 4182162092
+
+found by converting the ascii to decimal
